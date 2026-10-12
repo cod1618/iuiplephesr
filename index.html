@@ -2,10 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Background Image</title>
+    <style>
+        body {
+            /* 1. Point to your image file */
+            background-image: url('background.jpg');
+            
+            /* 2. Prevent the image from repeating/tiling */
+            background-repeat: no-repeat;
+            
+            /* 3. Center the image horizontally and vertically */
+            background-position: center;
+            
+            /* 4. Stretch the image to perfectly cover the screen */
+            background-size: cover;
+            
+            /* 5. Keep the background fixed in place when scrolling */
+            background-attachment: fixed;
+            
+            /* Optional: Reset margins for full edge-to-edge coverage */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling text elements so they are readable on top of your background */
+        .content {
+            color: white;
+            text-align: center;
+            padding-top: 20%;
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first simple website using HTML.</p>
+
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This page features a full-screen background image.</p>
+    </div>
+
 </body>
 </html>
